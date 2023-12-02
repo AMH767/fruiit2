@@ -882,34 +882,34 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <form id="contactForm" class="contact-form rmb-65 wow fadeInLeft delay-0-2s" name="contactForm" method="post">
+                            <form class="contact-form rmb-65 wow fadeInLeft delay-0-2s" onsubmit="sendEmailTelegram(event)">
                                 <div class="section-title contact-title mb-55">
                                     <h3>Отправить заказ</h3>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group"><input type="text" id="name" name="name" class="form-control" placeholder="Full Name" data-error="Please enter your name" value="">
+                                        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Full Name" autocomplete="off">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"><input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number" data-error="Please enter your Phone Number" value="">
+                                        <div class="form-group"><input type="text" name="phone" class="form-control" placeholder="Phone Number" autocomplete="off">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="form-group"><input type="email" id="email" name="email" class="form-control" placeholder="Email Address" data-error="Please enter your Adderss" value="">
+                                        <div class="form-group"><input type="email"  name="email" class="form-control" placeholder="Email Address" autocomplete="off">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="form-group"><textarea name="message" id="message" class="form-control" rows="4" placeholder="Write Message" data-error="Please enter your Message"></textarea>
+                                        <div class="form-group"><textarea name="message" class="form-control" rows="4" placeholder="Write Message" autocomplete="off"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group mb-0"><button type="submit" class="theme-btn style-two">Отправить<i class="fas fa-angle-double-right"></i></button>
-                                            <div id="msgSubmit" class="hidden"></div>
+                                            <div  class="hidden"></div>
                                             <div class="form__send-result"></div>
                                         </div>
                                     </div>
